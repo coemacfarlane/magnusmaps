@@ -1,0 +1,79 @@
+.navbar {
+    height: 50px;
+}
+#navbarNav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+*:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+p {
+    margin-bottom: 0;
+}
+a {
+    color: #327367;
+}
+
+.btn {
+    background-color: #255C52;
+    border-color: #255C52;
+}
+.btn:hover, .btn:active, .btn:focus {
+    background-color: #327367;
+    border-color: #327367;
+}
+
+/* MAP */
+#map {
+    height: calc(100vh - 50px);
+    width: 100%;
+}
+
+.infowindow-img {
+    height: 150px;
+    min-width: 200px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; 
+}
+.infowindow-img > img {
+    width: auto;
+    height: 100%;
+}
+
+/* LIST */
+.list-container {
+    background-color: #EBEBEB;
+}
+
+#list .infowindow-img {
+    height: 250px;
+}
+
+.card {
+    flex-direction: row;
+}
+
+/* MODAL */
+#modal-img {
+    height: 100px;
+    width: 150px;
+}
+#modal-img div {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; 
+}
+
+@media only screen and (min-width: 990px) {
+    #navbarNav {
+        width: 100%;
+    }
+}

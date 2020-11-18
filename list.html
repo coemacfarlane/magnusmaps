@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Map 487</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" defer></script>
+
+    <!-- API Key : AIzaSyC7ZAPkMmrtxoB5kYP7v397mXfVhPF-M1M -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7ZAPkMmrtxoB5kYP7v397mXfVhPF-M1M&callback=initMap"
+    type="text/javascript"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="script.js" defer></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Statement List</a>
+        <div class="navbar-expand" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Map</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="list.html">List <span class="sr-only">(current)</span></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+        
+    <div class="container-fluid list-container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="text-center py-5">All Statements in Season One of The Magnus Archives</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="container" id="list"></div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <div id="modal-img"></div>
+                    <div class="d-flex flex-column">
+                        <h2 class="modal-title" id="modal-title">Modal title</h2>
+                        <h5 id="case-num">Case</h5>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p id="author"></p>
+                    <p id="audio"></p>
+                    <p id="date"></p>
+                    <p id="event"></p>
+                    <p id="location"></p>
+                    <p id="entities"></p>
+                    <div id="statement"></div>
+                </div>
+                <div id="modal-footer" class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
